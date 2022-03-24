@@ -506,7 +506,7 @@ use_preset_vocabulary: true
 亂花	lwanh hwae
 亂講	lwanh koeungq
 亂象	lwanh zyangq
-亂跑	lwanh baew
+亂跑	lwanh phaewq
 亂跳	lwanh dew
 亂道	lwanh dawq
 亂麻	lwanh mae
@@ -2862,7 +2862,7 @@ use_preset_vocabulary: true
 助理	dzryoh lyq
 助益	dzryoh qiaek
 助詞	dzryoh zy
-助跑	dzryoh baew
+助跑	dzryoh phaewq
 助陣	dzryoh drinh
 努克	noq kheok
 努力	noq lyk
@@ -8592,7 +8592,7 @@ use_preset_vocabulary: true
 快船	khwaejh zjwien
 快艇	khwaejh dengq
 快訊	khwaejh sinh
-快跑	khwaejh baew
+快跑	khwaejh phaewq
 快退	khwaejh thojh
 快速	khwaejh souk
 快進	khwaejh tsinh
@@ -9089,7 +9089,7 @@ use_preset_vocabulary: true
 慢火	maenh hwaq
 慢班	maenh paen
 慢用	maenh juongh
-慢跑	maenh baew
+慢跑	maenh phaewq
 慣例	kwaenh liejh
 慣偷	kwaenh thou
 慣家	kwaenh kae
@@ -9908,30 +9908,30 @@ use_preset_vocabulary: true
 拶刑	tsat gheng
 拶子	tsat tsyq
 拶指	tsat tjiq
-拼力	peeng lyk
-拼命	peeng myaengh
-拼圖	peeng do
-拼字	peeng dzyh
-拼客	peeng khaek
-拼寫	peeng siaeq
-拼成	peeng djiaeng
-拼接	peeng tsiep
-拼攏	peeng loungq
-拼板	peeng paenq
-拼桌	peeng troeuk
-拼死	peeng siq
-拼法	peeng puop
-拼湊	peeng tshouh
-拼火	peeng hwaq
-拼爭	peeng tsreeng
-拼版	peeng paenq
-拼盤	peeng ban
-拼裝	peeng tsryang
-拼讀	peeng douk
-拼貼	peeng thep
-拼音	peeng qyim
-拼餐	peeng tshan
-拼鬥	peeng touh
+拼力	pheng lyk
+拼命	pheng myaengh
+拼圖	piaeng do
+拼字	piaeng dzyh
+拼客	piaeng khaek
+拼寫	piaeng siaeq
+拼成	piaeng djiaeng
+拼接	piaeng tsiep
+拼攏	piaeng loungq
+拼板	piaeng paenq
+拼桌	piaeng troeuk
+拼死	pheng siq
+拼法	piaeng puop
+拼湊	piaeng tshouh
+拼火	pheng hwaq
+拼爭	pheng tsreeng
+拼版	piaeng paenq
+拼盤	piaeng ban
+拼裝	piaeng tsryang
+拼讀	piaeng douk
+拼貼	piaeng thep
+拼音	piaeng qyim
+拼餐	piaeng tshan
+拼鬥	pheng touh
 拾得	djip teok
 拾物	djip mut
 拾獲	djip ghweek
@@ -17241,7 +17241,7 @@ use_preset_vocabulary: true
 瞎子	haet tsyq
 瞎弄	haet loungh
 瞎忙	haet mang
-瞎拼	haet peeng
+瞎拼	haet piaeng
 瞎晃	haet ghwangq
 瞎混	haet ghonq
 瞎猜	haet tsheoj
@@ -17310,7 +17310,7 @@ use_preset_vocabulary: true
 短袖	twanq zuh
 短襪	twanq muot
 短訊	twanq sinh
-短跑	twanq baew
+短跑	twanq phaewq
 短路	twanq loh
 短靴	twanq hua
 矮人	qeeq njin
@@ -21037,7 +21037,7 @@ use_preset_vocabulary: true
 落色	lak sryk
 落莫	lak mak
 落葬	lak tsangh
-落跑	lak baew
+落跑	lak phaewq
 落馬	lak maeq
 葛優	kat qu
 葛巾	kat kyin
@@ -21586,7 +21586,7 @@ use_preset_vocabulary: true
 血庫	hwet khoh
 血性	hwet siaengh
 血戰	hwet tjienh
-血拼	hwet peeng
+血拼	hwet pheng
 血族	hwet dzouk
 血暈	hwet unh
 血書	hwet sjyo
@@ -22997,7 +22997,7 @@ use_preset_vocabulary: true
 賽程	seojh driaeng
 賽船	seojh zjwien
 賽艇	seojh dengq
-賽跑	seojh baew
+賽跑	seojh phaewq
 賽道	seojh dawq
 賽馬	seojh maeq
 賽點	seojh temq
@@ -23098,7 +23098,7 @@ use_preset_vocabulary: true
 起誓	khyq djiejh
 起課	khyq khwah
 起講	khyq koeungq
-起跑	khyq baew
+起跑	khyq phaewq
 起身	khyq sjin
 起迄	khyq hyt
 起運	khyq unh
@@ -23129,7 +23129,7 @@ use_preset_vocabulary: true
 超綱	trhiew kang
 超聲	trhiew sjiaeng
 超賣	trhiew meeh
-超跑	trhiew baew
+超跑	trhiew phaewq
 超速	trhiew souk
 超遷	trhiew tshien
 超頻	trhiew bin
@@ -23171,15 +23171,15 @@ use_preset_vocabulary: true
 跌跤	det khaew
 跌進	det tsinh
 跏趺	kae puo
-跑味	baew mujh
-跑堂	baew dang
-跑壘	baew lwiq
-跑步	baew boh
-跑法	baew puop
-跑路	baew loh
-跑酷	baew khok
-跑電	baew denh
-跑馬	baew maeq
+跑味	phaewq mujh
+跑堂	phaewq dang
+跑壘	phaewq lwiq
+跑步	phaewq boh
+跑法	phaewq puop
+跑路	phaewq loh
+跑酷	phaewq khok
+跑電	phaewq denh
+跑馬	phaewq maeq
 距今	gyoq kyim
 距角	gyoq koeuk
 跟人	keon njin
@@ -23736,7 +23736,7 @@ use_preset_vocabulary: true
 逃竄	daw tshwanh
 逃荒	daw hwang
 逃課	daw khwah
-逃跑	daw baew
+逃跑	daw phaewq
 逃逸	daw jit
 逃避	daw bieh
 逆倫	ngyaek lwin
@@ -25708,7 +25708,7 @@ use_preset_vocabulary: true
 雙手	sroeung sjuq
 雙抽	sroeung trhu
 雙拐	sroeung kweeq
-雙拼	sroeung peeng
+雙拼	sroeung piaeng
 雙擊	sroeung kek
 雙擺	sroeung peeq
 雙星	sroeung seng
@@ -26457,7 +26457,7 @@ use_preset_vocabulary: true
 領袖	liaengq zuh
 領諾	liaengq nak
 領證	liaengq tjyngh
-領跑	liaengq baew
+領跑	liaengq phaewq
 領路	liaengq loh
 領軍	liaengq kun
 領釦	liaengq khouq
@@ -26642,7 +26642,7 @@ use_preset_vocabulary: true
 飛船	puj zjwien
 飛艇	puj dengq
 飛賊	puj dzeok
-飛跑	puj baew
+飛跑	puj phaewq
 飛躍	puj jyak
 飛身	puj sjin
 飛輪	puj lwin
@@ -30523,7 +30523,7 @@ use_preset_vocabulary: true
 快中子	khwaejh trung tsyq
 快可立	khwaejh khaq lip
 快板兒	khwaejh paenq njie
-快步跑	khwaejh boh baew
+快步跑	khwaejh boh phaewq
 快炒店	khwaejh tsrhaewq temh
 快熟麵	khwaejh djuk menh
 快餐店	khwaejh tshan temh
@@ -30843,8 +30843,8 @@ use_preset_vocabulary: true
 拜物教	peejh mut kaewh
 拳擊手	guen kek sjuq
 拳擊臺	guen kek deoj
-拼到底	peeng tawh tejq
-拼起來	peeng khyq leoj
+拼到底	pheng tawh tejq
+拼起來	piaeng khyq leoj
 拾音器	djip qyim khyih
 持久戰	dry kuq tjienh
 持國天	dry kweok then
@@ -34658,7 +34658,7 @@ use_preset_vocabulary: true
 起訴員	khyq soh un
 起訴書	khyq soh sjyo
 起訴者	khyq soh tjiaeq
-起跑線	khyq baew sienh
+起跑線	khyq phaewq sienh
 起電機	khyq denh kyj
 起點線	khyq temq sienh
 超博士	trhiew pak dzryq
@@ -34689,15 +34689,15 @@ use_preset_vocabulary: true
 跆拳道	deoj guen dawq
 跌停板	det deng paenq
 跌眼鏡	det ngeenq kyaengh
-跑味兒	baew mujh njie
-跑步者	baew boh tjiaeq
-跑江湖	baew koeung gho
-跑神兒	baew zjin njie
-跑警報	baew kyaengq pawh
-跑馬地	baew maeq dih
-跑馬場	baew maeq dryang
-跑馬山	baew maeq sreen
-跑馬廳	baew maeq theng
+跑味兒	phaewq mujh njie
+跑步者	phaewq boh tjiaeq
+跑江湖	phaewq koeung gho
+跑神兒	phaewq zjin njie
+跑警報	phaewq kyaengq pawh
+跑馬地	phaewq maeq dih
+跑馬場	phaewq maeq dryang
+跑馬山	phaewq maeq sreen
+跑馬廳	phaewq maeq theng
 跟屁股	keon phih koq
 路得記	loh teok kyh
 路德宗	loh teok tsong
@@ -36186,7 +36186,7 @@ use_preset_vocabulary: true
 七國集團	tshit kweok dzip dwan
 七層架構	tshit dzeong kaeh kouh
 七年之癢	tshit nen tjy jyangq
-七拼八湊	tshit peeng peet tshouh
+七拼八湊	tshit piaeng peet tshouh
 七政四餘	tshit tjiaengh sih jyo
 七旬老人	tshit zwin lawq njin
 七竅生煙	tshit khewh sryaeng qen
@@ -38106,12 +38106,12 @@ use_preset_vocabulary: true
 拜金主義	peejh kyim tjuoq ngyeh
 拭目以待	sjyk muk jyq deojq
 拭目傾耳	sjyk muk khwiaeng njyq
-拼圖玩具	peeng do ngwanh guoh
-拼板玩具	peeng paenq ngwanh guoh
-拼花地板	peeng hwae dih paenq
-拼音字母	peeng qyim dzyh mouq
-拼音文字	peeng qyim mun dzyh
-拼音階段	peeng qyim keej dwanh
+拼圖玩具	piaeng do ngwanh guoh
+拼板玩具	piaeng paenq ngwanh guoh
+拼花地板	piaeng hwae dih paenq
+拼音字母	piaeng qyim dzyh mouq
+拼音文字	piaeng qyim mun dzyh
+拼音階段	piaeng qyim keej dwanh
 拾人牙慧	djip njin ngae ghwejh
 持續時間	dry zuok djy keenh
 指指點點	tjiq tjiq temq temq
@@ -39271,7 +39271,7 @@ use_preset_vocabulary: true
 白腹隼鵰	baek puk swinq tew
 白腹鳳鶥	baek puk bungh myi
 白腿小隼	baek thojq siewq swinq
-白跑一趟	baek baew qit traengh
+白跑一趟	baek phaewq qit traengh
 白金漢宮	baek kyim hanh kung
 白金漢郡	baek kyim hanh gunh
 白雪公主	baek swiet koung tjuoq
@@ -39864,7 +39864,7 @@ use_preset_vocabulary: true
 自欺欺人	dzih khy khy njin
 自然主義	dzih njien tjuoq ngyeh
 自然之友	dzih njien tjy uq
-自然拼讀	dzih njien peeng douk
+自然拼讀	dzih njien piaeng douk
 自然條件	dzih njien dew gyenq
 自然災害	dzih njien tseoj ghajh
 自然現象	dzih njien ghenh zyangq
@@ -40296,7 +40296,7 @@ use_preset_vocabulary: true
 跌破眼鏡	det phah ngeenq kyaengh
 跌跌爬爬	det det bae bae
 跌跌蹌蹌	det det tshyang tshyang
-跑來跑去	baew leoj baew khyoh
+跑來跑去	phaewq leoj phaewq khyoh
 距狀皮層	gyoq dzryangh bye dzeong
 距翅麥雞	gyoq sjieh meek kej
 路人皆知	loh njin keej trie
@@ -40379,7 +40379,7 @@ use_preset_vocabulary: true
 通信服務	thoung sinh buk muoh
 通信網絡	thoung sinh muangq lak
 通商口岸	thoung sjyang khouq nganh
-通用拼音	thoung juongh peeng qyim
+通用拼音	thoung juongh piaeng qyim
 通用電器	thoung juongh denh khyih
 通訊協定	thoung sinh ghep dengh
 通訊系統	thoung sinh ghejh thongh
@@ -41631,7 +41631,7 @@ use_preset_vocabulary: true
 通用字符集	thoung juongh dzyh buo dzip
 通訊自動化	thoung sinh dzih doungq hwaeh
 遼寧古盜鳥	lew neng koq dawh tewq
-郵政式拼音	u tjiaengh sjyk peeng qyim
+郵政式拼音	u tjiaengh sjyk piaeng qyim
 都市美型男	to djyq myiq gheng nom
 鄂爾多斯市	ngak njieq ta sie djyq
 鄂霍次克海	ngak hwak tshih kheok heojq

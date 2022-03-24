@@ -8411,6 +8411,7 @@ import_tables:
 拺	tsrheek
 拼	peeng
 拼	pheng
+拼	piaeng
 拽	djiejh
 拽	jiet
 拾	djip
@@ -18644,6 +18645,7 @@ import_tables:
 跐	tsryeq
 跑	baew
 跑	boeuk
+跑	phaewq	95%
 跒	khaeq
 跓	druoq
 跔	kuo
@@ -20801,6 +20803,7 @@ import_tables:
 韹	ghwaeng
 韹	ghwang
 韺	qyaeng
+韻	uinh
 韻	unh
 韽	qeemh
 韽	qom
@@ -28261,8 +28264,8 @@ import_tables:
 質押	trih qaep
 質樸	tjit phoeuk
 質量	tjit lyangh
-跑圈	baew khuen
-跑調	baew dewh
+跑圈	phaewq khuen
+跑調	phaewq dewh
 身分	sjin bunh
 車主	tjhiae tjuoq
 車票	tjhiae phiewh

@@ -13,12 +13,19 @@ class MissingDescription(Exception):
 
 FIXES = {
     # 來自審音討論 https://github.com/ayaka14732/rime-tshet/discussions/2
-    # TODO
+    '並肴平': (
+        ('跑', '滂肴上', True),
+    ),
 
     # 其他
     # 後起字
     '疑開B仙去': (
         ('這', '章開三麻上', True),  # 僅於詞中修正
+    ),
+    '幫耕平': (
+        ('拼', '滂青平',  # 僅調整列出的詞
+         ('拼力', '拼命', '拼死', '拼火', '拼爭', '拼鬥', '血拼', '拼到底')),
+        ('拼', '幫A清平', True)
     ),
     # unt 校訂地位（部分）
     '羣開佳上': (
@@ -38,23 +45,36 @@ FIXES = {
 }
 
 
-def convert(ch, roman_kyonh, is_word):
+def convert(ch, roman_kyonh, word):
     try:
         descr = kyonh2descr[roman_kyonh]
     except KeyError:
         raise MissingDescription
     for chs, fix, *ext in FIXES.get(descr, ()):
-        if len(ext) > 0 and ext[0] is not None and ext[0] != is_word:
+        if chs is not None and ch not in chs:
             continue
-        if chs is None or ch in chs:
-            descr = fix if fix is not None else descr
-            if descr.startswith('!'):
-                return descr[1:]
-            break
+        if len(ext) > 0:
+            if type(ext[0]) == bool:
+                if ext[0] != (len(word) > 1):
+                    continue
+            elif isinstance(ext[0], (list, tuple)):
+                if word not in ext[0]:
+                    continue
+        descr = fix if fix is not None else descr
+        if descr.startswith('!'):
+            return descr[1:]
+        break
     return descr2tshet[descr]
 
 
-def do(fin, fout, ferr):
+ADDITIONAL = '''
+拼\tpiaeng
+韻\tuinh
+跑\tphaewq\t95%
+'''.lstrip()
+
+
+def do(fin, fout, ferr, additional=None):
     # header
     for line in fin:
         line = line.rstrip('\n')
@@ -82,7 +102,7 @@ def do(fin, fout, ferr):
         assert len(word) == len(romans)
 
         try:
-            romans = ' '.join(convert(c, roman, len(word) > 1)
+            romans = ' '.join(convert(c, roman, word)
                               for c, roman in zip(word, romans))
             print(word, romans, *extras, sep='\t', file=fout)
         except MissingDescription:
@@ -90,9 +110,12 @@ def do(fin, fout, ferr):
                 if roman not in kyonh2descr:
                     print(roman, c, file=ferr)
 
+    if additional:
+        print(additional, end='', file=fout)
+
 
 with open('cache/unhandled2.txt', 'w') as ferr:
     with open('../rime-kyonh/kyonh.dict.yaml') as fin, open('tshet.dict.yaml', 'w') as fout:
-        do(fin, fout, ferr)
+        do(fin, fout, ferr, ADDITIONAL)
     with open('../rime-kyonh/kyonh.words.dict.yaml') as fin, open('tshet.words.dict.yaml', 'w') as fout:
         do(fin, fout, ferr)
