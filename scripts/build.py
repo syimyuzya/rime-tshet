@@ -7,11 +7,23 @@ with open('cache/tshet.txt') as f:
     descr2tshet = dict(line.rstrip('\n').split('\t') for line in f)
 
 
+FIXES = {
+    '曉開齊上': (
+        (None, '匣開齊上'),
+    ),
+    '羣開佳上': (
+        ('箉', '定開佳上'),
+        (None, '見合佳上'),
+    ),
+}
+
+
 def convert(ch, roman_kyonh):
     descr = kyonh2descr[roman_kyonh]
-    # 「徯」小韻音誤
-    if descr == '曉開齊上':
-        descr = '匣開齊上'
+    for chs, fix in FIXES.get(descr, ()):
+        if chs is None or ch in chs:
+            descr = fix
+            break
     return descr2tshet[descr]
 
 
