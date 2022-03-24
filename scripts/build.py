@@ -21,6 +21,9 @@ FIXES = {
     ),
     '見開B仙入': (
         ('孑訐𨥂趌𡤼', '見開A仙入'),
+    ),
+    '影開蒸入': (
+        ('抑𡊁𢬃𡊶', '!qyik'),  # qieyun-js外地位
     )
 }
 
@@ -33,6 +36,8 @@ def convert(ch, roman_kyonh):
     for chs, fix in FIXES.get(descr, ()):
         if chs is None or ch in chs:
             descr = fix if fix is not None else descr
+            if descr.startswith('!'):
+                return descr[1:]
             break
     return descr2tshet[descr]
 
