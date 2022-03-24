@@ -62,7 +62,7 @@ rime 切韻拼音輸入方案
 
 ![](https://camo.githubusercontent.com/97f42eb9aff6a44934777e2568ff5e6dc7a648266bbdc01739ec09d5810d718e/68747470733a2f2f692e696d6775722e636f6d2f657578684543562e706e67)
 
-在跳出的視窗中鍵入 `cantonese` 以安裝粵語輸入方案（用於反查），按下 <kbd>Enter</kbd>。然後鍵入 `ayaka14732/rime-tshet`，按下 <kbd>Enter</kbd>。
+在跳出的視窗中鍵入 `cantonese` 以安裝粵語輸入方案（用於反查），按下 <kbd>Enter</kbd>。然後鍵入 `syimyuzya/rime-tshet`，按下 <kbd>Enter</kbd>。
 
 ![](https://camo.githubusercontent.com/9609be7beef59bc18bb006aa95c8d17238f2ad45e0f88a274bc03d3984bad1c1/68747470733a2f2f692e696d6775722e636f6d2f315871617959382e706e67)
 
@@ -93,7 +93,7 @@ rime 切韻拼音輸入方案
 打開 Terminal，複製粘貼以下命令：
 
 ```sh
-curl -fsSL https://git.io/rime-install | bash -s -- cantonese ayaka14732/rime-tshet custom:set:config=default,key=installed_from,value=ayaka14732/rime-tshet custom:clear_schema_list custom:add:schema=tshet custom:add:schema=luna_pinyin custom:add:schema=jyut6ping3
+curl -fsSL https://git.io/rime-install | bash -s -- cantonese syimyuzya/rime-tshet custom:set:config=default,key=installed_from,value=syimyuzya/rime-tshet custom:clear_schema_list custom:add:schema=tshet custom:add:schema=luna_pinyin custom:add:schema=jyut6ping3
 ```
 
 在命令執行過程中，可能會跳出視窗提示安裝 git，要點選允許，否則無法正常安裝。
@@ -190,7 +190,7 @@ export XMODIFIERS=@im=fcitx
 
 ```sh
 mkdir -p ~/.local/share/fcitx5/rime/opencc
-git clone https://github.com/ayaka14732/rime-tshet.git ~/.rime-tshet
+git clone https://github.com/syimyuzya/rime-tshet.git ~/.rime-tshet
 ln -s ~/.rime-tshet/*.yaml ~/.local/share/fcitx5/rime
 git clone https://github.com/rime/rime-cantonese.git ~/.rime-cantonese
 ln -s ~/.rime-cantonese/*.yaml ~/.local/share/fcitx5/rime
