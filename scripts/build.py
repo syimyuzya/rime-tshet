@@ -12,9 +12,15 @@ class MissingDescription(Exception):
 
 
 FIXES = {
-    '曉開齊上': (
-        (None, '匣開齊上'),
+    # 來自審音討論 https://github.com/ayaka14732/rime-tshet/discussions/2
+    # TODO
+
+    # 其他
+    # 後起字
+    '疑開B仙去': (
+        ('這', '章開三麻上', True),  # 僅於詞中修正
     ),
+    # unt 校訂地位（部分）
     '羣開佳上': (
         ('箉', '定開佳上'),
         (None, '見合佳上'),
@@ -24,16 +30,22 @@ FIXES = {
     ),
     '影開蒸入': (
         ('抑𡊁𢬃𡊶', '!qyik'),  # qieyun-js外地位
-    )
+    ),
+    # 其他錯音
+    '曉開齊上': (
+        (None, '匣開齊上'),
+    ),
 }
 
 
-def convert(ch, roman_kyonh):
+def convert(ch, roman_kyonh, is_word):
     try:
         descr = kyonh2descr[roman_kyonh]
     except KeyError:
         raise MissingDescription
-    for chs, fix in FIXES.get(descr, ()):
+    for chs, fix, *ext in FIXES.get(descr, ()):
+        if len(ext) > 0 and ext[0] is not None and ext[0] != is_word:
+            continue
         if chs is None or ch in chs:
             descr = fix if fix is not None else descr
             if descr.startswith('!'):
@@ -70,7 +82,7 @@ def do(fin, fout, ferr):
         assert len(word) == len(romans)
 
         try:
-            romans = ' '.join(convert(c, roman)
+            romans = ' '.join(convert(c, roman, len(word) > 1)
                               for c, roman in zip(word, romans))
             print(word, romans, *extras, sep='\t', file=fout)
         except MissingDescription:
