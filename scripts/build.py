@@ -114,6 +114,7 @@ ADDITIONAL = '''
 跑\tphaewq\t95%
 咱\tdza
 咋\ttsaq\t90%
+間\tkeen
 '''.lstrip()
 
 
