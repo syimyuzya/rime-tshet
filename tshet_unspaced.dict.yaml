@@ -3698,8 +3698,7 @@ sort: by_weight
 令	liaengh
 令	lien
 以	jyq
-仨	sam
-仨	sap
+仨	sa
 仫	moh
 仯	tsrhaewh
 仯	tsrhaewq
@@ -3958,7 +3957,7 @@ sort: by_weight
 俸	buongh
 俸	poungq
 俹	qaeh
-俺	qomq
+俺	ngomq
 俺	qyemh	2%
 俺	qyomh	2%
 俻	byih
@@ -3972,6 +3971,7 @@ sort: by_weight
 倅	tshojh
 倅	tsot
 倆	lyangq
+倆	lyaq
 倇	quonq
 倈	ly
 倉	tshang
@@ -5035,6 +5035,7 @@ sort: by_weight
 咉	qangq
 咊	ghwa
 咋	dzraek
+咋	tsaq	90%
 咋	tsraeh
 咋	tsreek
 和	ghwa
@@ -5079,6 +5080,7 @@ sort: by_weight
 咮	truoh
 咯	kak
 咰	sruit
+咱	dza
 咱	dzom
 咳	gheoj
 咳	kheok
@@ -5251,7 +5253,7 @@ sort: by_weight
 啡	phojq
 啣	ghaem
 啤	bie
-啥	sjiaeq
+啥	djiaeq
 啦	lop
 啪	phaek
 啵	pa
@@ -7657,7 +7659,7 @@ sort: by_weight
 怋	mon
 怌	phyi
 怍	dzak
-怎	tsryimq
+怎	tsoimq
 怏	qyangh
 怏	qyangq
 怐	houh
@@ -7801,7 +7803,7 @@ sort: by_weight
 悠	ju
 悢	lyangh
 患	ghwaenh
-您	nrim
+您	nrimq
 悮	ngoh
 悰	dzong
 悱	phujq
@@ -9184,7 +9186,8 @@ sort: by_weight
 早	tsawq
 旬	zwin
 旭	huok
-旮	kae
+旮	koeuk
+旯	lak
 旰	kanh
 旱	ghanq
 旴	huo
