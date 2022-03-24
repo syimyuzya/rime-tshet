@@ -6,6 +6,15 @@ with open('cache/kyonh.txt') as f:
 with open('cache/tshet.txt') as f:
     descr2tshet = dict(line.rstrip('\n').split('\t') for line in f)
 
+
+def convert(ch, roman_kyonh):
+    descr = kyonh2descr[roman_kyonh]
+    # 「徯」小韻音誤
+    if descr == '曉開齊上':
+        descr = '匣開齊上'
+    return descr2tshet[descr]
+
+
 def do(fin, fout, ferr):
     # header
     for line in fin:
@@ -29,13 +38,17 @@ def do(fin, fout, ferr):
             print(file=fout)
             continue
 
-        word, romans, *extras = line.split('\t')
+        word, romans_str, *extras = line.split('\t')
+        romans = romans_str.split(' ')
+        assert len(word) == len(romans)
 
         try:
-            romans = ' '.join(descr2tshet[kyonh2descr[roman]] for roman in romans.split(' '))
+
+            romans = ' '.join(convert(c, roman)
+                              for c, roman in zip(word, romans))
             print(word, romans, *extras, sep='\t', file=fout)
         except KeyError:
-            for c, roman in zip(word, romans.split(' ')):
+            for c, roman in zip(word, romans):
                 if roman not in kyonh2descr:
                     print(roman, c, file=ferr)
 
