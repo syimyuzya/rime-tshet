@@ -6620,7 +6620,7 @@ sort: by_weight
 孎	troeuk
 孎	truok
 子	tsyq
-孑	kyet
+孑	kiet
 孒	kuongq
 孒	kuot
 孒	kut
@@ -17812,8 +17812,8 @@ sort: by_weight
 訍	tsrheeh
 討	thawq
 訏	huo
+訐	kiet
 訐	kyejh
-訐	kyet
 訐	kyot
 訒	njinh
 訓	hunh
@@ -18557,8 +18557,8 @@ sort: by_weight
 越	uot	99%
 趌	gyit
 趌	khit
+趌	kiet
 趌	kit
-趌	kyet
 趍	drie
 趍	tshuo
 趎	druo
@@ -23013,7 +23013,7 @@ sort: by_weight
 𡤫	khae
 𡤬	quak
 𡤯	lwi
-𡤼	kyet
+𡤼	kiet
 𡥀	pawq
 𡥆	hawh
 𡥈	kaewh
@@ -26373,7 +26373,7 @@ sort: by_weight
 𨣼	tshoung
 𨤐	mie
 𨤩	trhuong
-𨥂	kyet
+𨥂	kiet
 𨥥	kwaengq
 𨥦	dzej
 𨥳	dzej
@@ -33638,11 +33638,11 @@ sort: by_weight
 子集	tsyq=dzip
 子音	tsyq=qyim
 子鼠	tsyq=sjyoq
-孑孑	kyet=kyet
-孑孓	kyet=kuongq
-孑然	kyet=njien
-孑立	kyet=lip
-孑身	kyet=sjin
+孑孑	kiet=kiet
+孑孓	kiet=kuongq
+孑然	kiet=njien
+孑立	kiet=lip
+孑身	kiet=sjin
 孔丘	khoungq=khu
 孔子	khoungq=tsyq
 孔孟	khoungq=maengh
@@ -33745,7 +33745,7 @@ sort: by_weight
 孤傲	ko=ngawh
 孤孀	ko=sryang
 孤子	ko=tsyq
-孤孑	ko=kyet
+孤孑	ko=kiet
 孤寂	ko=dzek
 孤寒	ko=ghan
 孤寡	ko=kwaeq
@@ -65814,9 +65814,9 @@ sort: by_weight
 嫌貧愛富	ghem=byin=qeojh=puh
 子子孫孫	tsyq=tsyq=son=son
 子孫娘娘	tsyq=son=nryang=nryang
-孑孑為義	kyet=kyet=ue=ngyeh
-孑然一身	kyet=njien=qit=sjin
-孑立無依	kyet=lip=muo=qyj
+孑孑為義	kiet=kiet=ue=ngyeh
+孑然一身	kiet=njien=qit=sjin
+孑立無依	kiet=lip=muo=qyj
 孔孟之道	khoungq=maengh=tjy=dawq
 孔武有力	khoungq=muoq=uq=lyk
 孔融讓梨	khoungq=jung=njyangh=li
@@ -65832,7 +65832,7 @@ sort: by_weight
 孟加拉國	maengh=kae=lop=kweok
 孟加拉灣	maengh=kae=lop=qwaen
 孟德斯鳩	maengh=teok=sie=ku
-孤孑特立	ko=kyet=deok=lip
+孤孑特立	ko=kiet=deok=lip
 孤家寡人	ko=kae=kwaeq=njin
 孤注一擲	ko=tjuoh=qit=driaek
 孤立子波	ko=lip=tsyq=pa
@@ -67389,7 +67389,7 @@ sort: by_weight
 焦頭爛額	tsiew=dou=lanh=ngaek
 煙花柳巷	qen=hwae=luq=ghoeungh
 煙花粉黛	qen=hwae=punq=deojh
-煢煢孑立	gwiaeng=gwiaeng=kyet=lip
+煢煢孑立	gwiaeng=gwiaeng=kiet=lip
 煥然一新	hwanh=njien=qit=sin
 照本宣科	tjiewh=ponq=swien=khwa
 照片底版	tjiewh=phenh=tejq=paenq

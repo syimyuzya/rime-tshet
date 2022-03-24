@@ -7,6 +7,10 @@ with open('cache/tshet.txt') as f:
     descr2tshet = dict(line.rstrip('\n').split('\t') for line in f)
 
 
+class MissingDescription(Exception):
+    pass
+
+
 FIXES = {
     '曉開齊上': (
         (None, '匣開齊上'),
@@ -15,14 +19,20 @@ FIXES = {
         ('箉', '定開佳上'),
         (None, '見合佳上'),
     ),
+    '見開B仙入': (
+        ('孑訐𨥂趌𡤼', '見開A仙入'),
+    )
 }
 
 
 def convert(ch, roman_kyonh):
-    descr = kyonh2descr[roman_kyonh]
+    try:
+        descr = kyonh2descr[roman_kyonh]
+    except KeyError:
+        raise MissingDescription
     for chs, fix in FIXES.get(descr, ()):
         if chs is None or ch in chs:
-            descr = fix
+            descr = fix if fix is not None else descr
             break
     return descr2tshet[descr]
 
@@ -59,7 +69,7 @@ def do(fin, fout, ferr):
             romans = ' '.join(convert(c, roman)
                               for c, roman in zip(word, romans))
             print(word, romans, *extras, sep='\t', file=fout)
-        except KeyError:
+        except MissingDescription:
             for c, roman in zip(word, romans):
                 if roman not in kyonh2descr:
                     print(roman, c, file=ferr)
