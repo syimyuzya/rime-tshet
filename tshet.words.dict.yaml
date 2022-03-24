@@ -3,7 +3,7 @@
 
 ---
 name: tshet.words
-version: "2021.11.09-rev20220316-3"
+version: "2021.11.09-rev20220316-3-fixes"
 sort: by_weight
 use_preset_vocabulary: true
 ...

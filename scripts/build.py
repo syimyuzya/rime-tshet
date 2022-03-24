@@ -1,3 +1,5 @@
+import re
+
 with open('cache/kyonh.txt') as f:
     kyonh2descr = dict(line.rstrip('\n').split('\t')[::-1] for line in f)
 
@@ -12,6 +14,9 @@ def do(fin, fout, ferr):
         if line == '...':
             print(line, file=fout)
             break
+
+        if line.startswith('version:'):
+            line = re.sub('''(["']?)$''', r'-fixes\1', line, 1)
 
         line = line.replace('kyonh', 'tshet')
         print(line, file=fout)

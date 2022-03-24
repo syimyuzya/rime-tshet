@@ -3,7 +3,7 @@
 
 ---
 name: tshet
-version: "20201015-rev20220316-3"
+version: "20201015-rev20220316-3-fixes"
 sort: by_weight
 use_preset_vocabulary: true
 import_tables:
