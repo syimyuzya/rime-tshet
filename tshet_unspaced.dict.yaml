@@ -644,6 +644,7 @@ sort: by_weight
 㧁	khop
 㧁	khyoh
 㧁	kop
+㧄	khyomq
 㧆	kynh
 㧉	keojh
 㧊	phat
@@ -1968,6 +1969,7 @@ sort: by_weight
 䎄	hew
 䎈	jiejh
 䎌	tsrhuk
+䎎	nryop
 䎑	louk
 䎒	tjienq
 䎒	tsraenq
@@ -4434,6 +4436,7 @@ sort: by_weight
 凰	ghwang
 凱	kheojq
 凳	teongh
+凵	khyomq
 凶	huong
 凷	khojh
 凷	khwajh
@@ -6239,6 +6242,7 @@ sort: by_weight
 姁	huoh
 姁	huoq
 姂	buop
+姂	khyop
 姂	phuomh
 姅	panh
 姅	phanh
@@ -12281,6 +12285,7 @@ sort: by_weight
 猱	nruh
 猲	hat
 猲	hyot
+猲	khyop
 猳	kae
 猴	ghou
 猵	binq
@@ -22535,6 +22540,7 @@ sort: by_weight
 𠐾	khy
 𠐿	hweong
 𠑅	treeng
+𠑆	trhyomq
 𠑗	sien
 𠑘	ten
 𠑟	pen
@@ -23118,6 +23124,7 @@ sort: by_weight
 𡶫	nget
 𡷘	byet
 𡷛	ghanq
+𡷝	nryop
 𡷡	qwien
 𡷥	khok
 𡷨	kheeng
@@ -23997,6 +24004,7 @@ sort: by_weight
 𣹬	ghouk
 𣹮	phejh
 𣹲	dej
+𣹵	nryop
 𣺬	hwang
 𣻎	khou
 𣻎	khouh
@@ -25069,6 +25077,7 @@ sort: by_weight
 𦑜	keek
 𦑟	hweeng
 𦑡	djie
+𦑣	trhyop
 𦑲	dap
 𦑹	buo
 𦒆	lop
@@ -26116,6 +26125,7 @@ sort: by_weight
 𨇆	lajh
 𨇈	trih
 𨇙	kuejh
+𨇧	trhyomq
 𨇨	set
 𨇮	kuot
 𨇯	sroeung
