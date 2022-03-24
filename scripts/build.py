@@ -70,7 +70,6 @@ def do(fin, fout, ferr):
         assert len(word) == len(romans)
 
         try:
-
             romans = ' '.join(convert(c, roman)
                               for c, roman in zip(word, romans))
             print(word, romans, *extras, sep='\t', file=fout)
