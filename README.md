@@ -8,7 +8,7 @@ rime 切韻拼音輸入方案
 
 ## 關於本 fork
 
-本 fork 為[原版](https://github.com/ayaka14732/rime-tshet)之修改，加入了[正在討論中的一些審音修訂](https://github.com/ayaka14732/rime-tshet/discussions/2)，以及其他一些尚未整合進上遊數據的修訂：
+本 fork 為[原版](https://github.com/ayaka14732/rime-tshet)之修改，加入了[仍在討論中的一些審音修訂](https://github.com/ayaka14732/rime-tshet/discussions/2)，以及其他一些尚未整合進上遊數據、可能仍需討論的修訂：
 
 - 上遊單字碼表「徯」小韻誤作「曉開齊上」，本版修正為「匣開齊上」
 - 本版引入了若干 Qieyun.js 未來提案中的邊緣地位修訂：
