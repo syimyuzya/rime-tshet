@@ -1,9 +1,9 @@
 import fs from 'fs';
 import Qieyun from 'qieyun';
-import { kyonh, tshet } from 'qieyun-examples';
+import { kyonh, tshet as tupa } from 'qieyun-examples';
 
 const kyonh_map = [];
-const tshet_map = [];
+const tupa_map = [];
 
 function* 生成音韻地位() {
     yield* Qieyun.iter音韻地位();
@@ -52,16 +52,16 @@ for (const 音韻地位 of 生成音韻地位()) {
     const kyonh_ = kyonh_override[最簡描述] || kyonh(音韻地位);
     // HACK 目前（20220316）版 tshet 需特別處理凡韻非脣音
     // （main 分支已修正，將包含於下版）
-    let tshet_;
+    let tupa_;
     if (音韻地位.屬於('凡韻 且 非 脣音')) {
-        tshet_ = tshet(Qieyun.音韻地位.from描述(最簡描述.replace('凡', '嚴')));
+        tupa_ = tupa(Qieyun.音韻地位.from描述(最簡描述.replace('凡', '嚴')));
     } else {
-        tshet_ = tshet(音韻地位);
+        tupa_ = tupa(音韻地位);
     }
 
     kyonh_map.push(最簡描述 + '\t' + kyonh_);
-    tshet_map.push(最簡描述 + '\t' + tshet_);
+    tupa_map.push(最簡描述 + '\t' + tupa_);
 }
 
 fs.writeFileSync('cache/kyonh.txt', kyonh_map.join('\n') + '\n');
-fs.writeFileSync('cache/tshet.txt', tshet_map.join('\n') + '\n');
+fs.writeFileSync('cache/tupa.txt', tupa_map.join('\n') + '\n');

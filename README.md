@@ -1,6 +1,6 @@
-# rime-tshet ("fixes" fork)
+# rime-tupa
 
-rime 切韻拼音輸入方案
+RIME 切韻拼音輸入方案
 
 [切韻拼音](https://zhuanlan.zhihu.com/p/478751152)（Tshet-uinh Phonetic Alphabet，可簡稱切拼或 TUPA）是爲切韻音系創制的拼音方案，用於拼寫與切韻音系相合的南北朝中期到隋初中古漢語。
 
@@ -8,7 +8,7 @@ rime 切韻拼音輸入方案
 
 ## 關於本 fork
 
-本 fork 為[原版](https://github.com/ayaka14732/rime-tshet)之修改，加入了[仍在討論中的一些審音修訂](https://github.com/ayaka14732/rime-tshet/discussions/2)，以及其他一些尚未整合進上遊數據、可能仍需討論的修訂：
+本 fork 為[原始版](https://github.com/ayaka14732/rime-tshet)之修改，加入了[仍在討論中的一些審音修訂](https://github.com/ayaka14732/rime-tshet/discussions/2)，以及其他一些尚未整合進上遊數據、可能仍需討論的修訂：
 
 - 上遊單字碼表「徯」小韻誤作「曉開齊上」，本版修正為「匣開齊上」
 - 本版引入了若干 Qieyun.js 未來提案中的邊緣地位修訂：
@@ -62,7 +62,7 @@ rime 切韻拼音輸入方案
 
 ![](https://camo.githubusercontent.com/97f42eb9aff6a44934777e2568ff5e6dc7a648266bbdc01739ec09d5810d718e/68747470733a2f2f692e696d6775722e636f6d2f657578684543562e706e67)
 
-在跳出的視窗中鍵入 `cantonese` 以安裝粵語輸入方案（用於反查），按下 <kbd>Enter</kbd>。然後鍵入 `syimyuzya/rime-tshet`，按下 <kbd>Enter</kbd>。
+在跳出的視窗中鍵入 `cantonese` 以安裝粵語輸入方案（用於反查），按下 <kbd>Enter</kbd>。然後鍵入 `syimyuzya/rime-tupa`，按下 <kbd>Enter</kbd>。
 
 ![](https://camo.githubusercontent.com/9609be7beef59bc18bb006aa95c8d17238f2ad45e0f88a274bc03d3984bad1c1/68747470733a2f2f692e696d6775722e636f6d2f315871617959382e706e67)
 
@@ -93,7 +93,7 @@ rime 切韻拼音輸入方案
 打開 Terminal，複製粘貼以下命令：
 
 ```sh
-curl -fsSL https://git.io/rime-install | bash -s -- cantonese syimyuzya/rime-tshet custom:set:config=default,key=installed_from,value=syimyuzya/rime-tshet custom:clear_schema_list custom:add:schema=tshet custom:add:schema=luna_pinyin custom:add:schema=jyut6ping3
+curl -fsSL https://git.io/rime-install | bash -s -- cantonese syimyuzya/rime-tupa custom:set:config=default,key=installed_from,value=syimyuzya/rime-tupa custom:clear_schema_list custom:add:schema=tupa custom:add:schema=luna_pinyin custom:add:schema=jyut6ping3
 ```
 
 在命令執行過程中，可能會跳出視窗提示安裝 git，要點選允許，否則無法正常安裝。
@@ -140,10 +140,18 @@ XMODIFIERS=@im=fcitx
 
 **第二步：安裝切韻拼音**
 
-從 AUR 安裝 [`rime-tshet`](https://aur.archlinux.org/packages/rime-tshet)。
+安裝依賴：
 
 ```sh
-yay -S rime-tshet
+pacman -S rime-cantonese
+```
+
+手動安裝 rime-tupa：
+
+```sh
+mkdir -p ~/.local/share/fcitx5/rime/opencc
+git clone https://github.com/syimyuzya/rime-tupa.git ~/.rime-tupa
+ln -s ~/.rime-tupa/*.yaml ~/.local/share/fcitx5/rime
 ```
 
 新建 `~/.local/share/fcitx5/rime/default.custom.yaml`：
@@ -151,7 +159,7 @@ yay -S rime-tshet
 ```yaml
 patch:
   schema_list:
-    - schema: tshet
+    - schema: tupa
 ```
 
 然後重新部署。
@@ -190,8 +198,8 @@ export XMODIFIERS=@im=fcitx
 
 ```sh
 mkdir -p ~/.local/share/fcitx5/rime/opencc
-git clone https://github.com/syimyuzya/rime-tshet.git ~/.rime-tshet
-ln -s ~/.rime-tshet/*.yaml ~/.local/share/fcitx5/rime
+git clone https://github.com/syimyuzya/rime-tupa.git ~/.rime-tupa
+ln -s ~/.rime-tupa/*.yaml ~/.local/share/fcitx5/rime
 git clone https://github.com/rime/rime-cantonese.git ~/.rime-cantonese
 ln -s ~/.rime-cantonese/*.yaml ~/.local/share/fcitx5/rime
 ln -s ~/.rime-cantonese/opencc/* ~/.local/share/fcitx5/rime/opencc
@@ -202,7 +210,7 @@ ln -s ~/.rime-cantonese/opencc/* ~/.local/share/fcitx5/rime/opencc
 ```yaml
 patch:
   schema_list:
-    - schema: tshet
+    - schema: tupa
 ```
 
 然後重新部署。
@@ -216,7 +224,7 @@ patch:
 卸載切韻拼音：
 
 ```sh
-rm -rf ~/.rime-tshet
+rm -rf ~/.rime-tupa
 rm -rf ~/.rime-cantonese
 find -L ~/.local/share/fcitx5/rime -maxdepth 1 -type l -exec rm -- {} +
 find -L ~/.local/share/fcitx5/rime/opencc -maxdepth 1 -type l -exec rm -- {} +

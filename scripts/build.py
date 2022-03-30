@@ -3,8 +3,8 @@ import re
 with open('cache/kyonh.txt') as f:
     kyonh2descr = dict(line.rstrip('\n').split('\t')[::-1] for line in f)
 
-with open('cache/tshet.txt') as f:
-    descr2tshet = dict(line.rstrip('\n').split('\t') for line in f)
+with open('cache/tupa.txt') as f:
+    descr2tupa = dict(line.rstrip('\n').split('\t') for line in f)
 
 
 class MissingDescription(Exception):
@@ -105,7 +105,7 @@ def convert(ch, roman_kyonh, word):
         if descr.startswith('!'):
             return descr[1:]
         break
-    return descr2tshet[descr]
+    return descr2tupa[descr]
 
 
 ADDITIONAL = '''
@@ -130,7 +130,7 @@ def do(fin, fout, ferr, additional=None):
         if line.startswith('version:'):
             line = re.sub('''(["']?)$''', r'-fixes\1', line, 1)
 
-        line = line.replace('kyonh', 'tshet')
+        line = line.replace('kyonh', 'tupa')
         print(line, file=fout)
 
     # data
@@ -159,7 +159,7 @@ def do(fin, fout, ferr, additional=None):
 
 
 with open('cache/unhandled2.txt', 'w') as ferr:
-    with open('../rime-kyonh/kyonh.dict.yaml') as fin, open('tshet.dict.yaml', 'w') as fout:
+    with open('../rime-kyonh/kyonh.dict.yaml') as fin, open('tupa.dict.yaml', 'w') as fout:
         do(fin, fout, ferr, ADDITIONAL)
-    with open('../rime-kyonh/kyonh.words.dict.yaml') as fin, open('tshet.words.dict.yaml', 'w') as fout:
+    with open('../rime-kyonh/kyonh.words.dict.yaml') as fin, open('tupa.words.dict.yaml', 'w') as fout:
         do(fin, fout, ferr)
