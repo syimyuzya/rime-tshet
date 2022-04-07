@@ -999,7 +999,7 @@ import_tables:
 㱿	khoeuk
 㲀	dzryin
 㲀	tjin
-㲃	khu
+㲃	khyiw
 㲃	kuh
 㲄	khouk
 㲅	kejh
@@ -3967,6 +3967,7 @@ import_tables:
 倃	guq
 倃	kaw
 倄	ghaew
+倄	uojq
 倅	tshojh
 倅	tsot
 倆	lyangq
@@ -4044,7 +4045,7 @@ import_tables:
 偈	gyet
 偉	ujq
 偋	biaengh
-偌	njah
+偌	njiaeh
 偎	qoj
 偏	phien
 偏	phienh
@@ -7732,7 +7733,7 @@ import_tables:
 恕	sjyoh
 恖	sy
 恗	ho
-恘	khu
+恘	khyiw
 恙	jyangh
 恚	qwieh
 恜	trhyk
@@ -7832,7 +7833,7 @@ import_tables:
 惃	konq
 惄	nek
 情	dziaeng
-惆	khu
+惆	khyiw
 惆	trhu
 惇	tjwin
 惇	ton
@@ -11111,7 +11112,7 @@ import_tables:
 淺	tshienq
 添	them
 淼	miewq
-渃	njah
+渃	njiaeh
 清	tshiaeng
 渌	louk
 渌	luok
@@ -22454,7 +22455,7 @@ import_tables:
 𠁁	douq
 𠁥	kwaeq
 𠁥	kweeq
-𠁫	khu
+𠁫	khyiw
 𠁭	gie
 𠂄	hwan
 𠂆	jiejh
@@ -25851,7 +25852,7 @@ import_tables:
 𧦪	byenq
 𧦭	thwa
 𧦮	nrae
-𧧏	njah
+𧧏	njiaeh
 𧧒	tshieh
 𧧗	huong
 𧧢	huangq
